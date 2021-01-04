@@ -24,15 +24,22 @@ Once the installation is completed, you can check the programm version and the s
 
 
 
-## Add some folders to cloned folder to match the folder organization used in this notebook:
+## Add some folders to match the folder organization used in this notebook:
 
-    mkdir metadata doc
+    mkdir data metadata doc
     mkdir -p analysis/prokka
+    mkdir -p data/mob_suite
+
+The analysis/prokka folder will hold the input and output of the prokka analysis
+The data/mob_suite will hold the output of a mob_suite analysis
+
+**Typically, MOB-suite assemblies files are the input of the prokka analysis**
 
 
 ## Copy the modified prokka exectubable at the right location in the conda prokka env
 
-Note The original prokka will be overwritten by this action.
+**Note: the original prokka will be overwritten by this action.**
+
 
 To know where your original prokka executable is located use the UNIX command which:
 
@@ -46,22 +53,25 @@ Copy the file at the right location
 
 *Auparavant, j'utilisais l'option --protein pour l'annotation des gènes d'antibiorésistance avec CARD. Je n'ai pas eu le temps de formater les informations du fichier protein_fasta_protein_homolog_model.fasta pour en faire un fichier fasta spécial utilisable par prokka, mais je vais le faire rapidement à mon retour. Le but est de remplacer la NCBI Bacterial Antimicrobial Resistance Reference Gene Database par une base de données similaire (core database) avec les données de CARD. Comme nous en avions discuté, la meilleure option serait de préparer une base de données de résistance aux métaux de la même manière.*
 
-## Modification #1 of the prokka executable (line 1)
+## Information about the modification #1 of the prokka executable (No action required!)
 
-Change the first line to
+The first line has been changed to allow the use of Perl installed in the conda environment (with BioPerl):
+
 ```perl
 #!/usr/bin/env perl
 ```
 
-Otherwise, you could get errors like : 'Can't locate Bio/SeqIO.pm in @INC (you may need to install the Bio::SeqIO module'
-in spite that bioperl is present in the conda environment.
+Otherwise, you could get errors like : 'Can't locate Bio/SeqIO.pm in @INC (you may need to install the Bio::SeqIO module'.
 
-## Information about the modification #2 of the prokka executable (lines 929-971)
 
-The second block of code was added. It allows prokka to use as a primary source
-of annotation a custom database of curated sequences found in enterobacteriaceae strains.
-As documented [here](https://github.com/tseemann/prokka#installation), the three core databases, applied in order, are (i) ISfinder, (ii) a NCBI Bacterial Antimicrobial Resistance Reference Gene Database and (iii) UniProtKB (SwissProt).
-Here we modify the prokka executable to allow the program to query another core database. 
+## Information about the modification #2 of the prokka executable (No action required!)
+
+As documented [here](https://github.com/tseemann/prokka#installation), the three core databases used by prokka, applied in order, are:
+ * ISfinder
+ * a NCBI Bacterial Antimicrobial Resistance Reference Gene Database
+ * UniProtKB (SwissProt).
+
+Here, by adding the second block of code, we modify the prokka executable to allow the query of an additionnal BLAST+ core database (PLASMIDS) as a primary source of annotation. PLASMID is a custom database of curated sequences found in some enterobacteriaceae plasmids.
 
 
 ```perl
@@ -95,9 +105,9 @@ if (-r $PLASMIDS_db) {
 }
 ```
 
-## Modification 3 of the fasta executbable relative to the original file (lines 1659-1692)
+## Information about the Modification #3 of the fasta executbable (No action required!)
 
-The third modification is to add the name of the new core database in an array. Note that this function is note used by the main prokka executable but rather by a companion script (setupdb.pl) used to prepare NCBI BLAST+ database.
+The third modification is to add the name of the new core database in an array. Note that this function is not used by the main prokka executable but rather by a companion script (setupdb.pl) used to prepare NCBI BLAST+ database.
 
 
 ```perl
@@ -138,16 +148,15 @@ sub setup_db {
 ```
 
 
-
-## Copy the special fasta file containing the sequences of the new Core database at the right place.
+## Copy the special fasta file containing the sequences of the new PLASMID core database at the right place.
 
 By default, prokka use the Bacteria kingdom.
 
-    cp edited_executable/prokka /home/brouardjs/miniconda3/envs/prokka/db/kingdom/Bacteria
+    cp ./db/core_database/PLASMIDS /home/brouardjs/miniconda3/envs/prokka/db/kingdom/Bacteria
 
 
-## Information about the sepcial fasta file containing the sequences of the new Core database
-The prokka special fasta file is described [here](https://github.com/tseemann/prokka#installation). Briefly it can holds a couple of informations in its header (ID, gene name, gene product) and help prokka to produce better annotations. Here an example of some lines of the PLASMID prokka special fasta file :
+## Information about the special fasta file containing the sequences of the new Core database
+The format of prokka special fasta file is described [here](https://github.com/tseemann/prokka#installation). Briefly, crucial informations in the header (the seq ID, the gene name and the gene product) are separated by ~~~ . The prokka program then used these fields to produce better annotations by adding the gene name and the gene product to the annotated features. Here are some lines of the PLASMID prokka special fasta file :
 
 
 ```shell
@@ -200,7 +209,7 @@ VTPSYYRRNKLWELEAMH
 
     prokka --setupdb
 
-You can check that it has been detected properly with:
+You can check that the new core database has been detected properly with:
     
     prokka --listdb
 
@@ -210,14 +219,7 @@ You can check that it has been detected properly with:
 
 Now that everything is set up correctly, you can run prokka on a batch of assemblies files
 
-Navigate to the scripts folder and use the new lauch_prokka python script. (Need to be adjusted for qsub...)
-
-
-
-input : a mob_suite folder containing subfolders like this :
-
-
-mob_suite
+Navigate to the scripts/ folder and use the new lauch_prokka.py script. (Le script fonctionne n'est pas terminé, mais il fonctionne!)
 
 
 
@@ -235,4 +237,7 @@ Auparavant, l'ajout des métadonnées se faisait avec l'aide d'un fichier texte 
 Avec les noms de protéines de type accession number on peut trouver le protein_product avec le fichier aro_catergories_index.csv de CARR.
 
 
+## Note à moi-même du 3 janvier
+
+Il y a qqch à corriger dans le script fastaReHeader.pl pour qu'il gère correctement les nouveaux plasmids_novel avec des caractères alphanumériques.
 

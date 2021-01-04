@@ -11,7 +11,7 @@ def get_files(start_dir):
 	    This function will find all files recursively.
 	"""
 	files = []
-	for filename in Path(start_dir).glob('**/plasmid*.fasta'):
+	for filename in Path(start_dir).glob('**/*.fasta'):
 		files.append(str(filename))
 	return files
 
