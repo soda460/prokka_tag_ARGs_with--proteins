@@ -1,0 +1,1 @@
+Here is a custom Core (BLAST+) datase used by prokka
