@@ -221,6 +221,10 @@ Now that everything is set up correctly, you can run prokka on a batch of assemb
 
 Navigate to the scripts/ folder and use the new lauch_prokka.py script. (Le script fonctionne n'est pas terminé, mais il fonctionne!)
 
+    ./launch_prokka.py -i ../data/mob_suite/wgs_assemblies -o ../analysis/prokka
+
+
+
 
 
 
