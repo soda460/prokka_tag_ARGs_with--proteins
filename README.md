@@ -51,7 +51,7 @@ Copy the file at the right location
 
 ## Note à Mario à propos des modifications de l'exécutable prokka
 
-*Auparavant, j'utilisais l'option --protein pour l'annotation des gènes d'antibiorésistance avec CARD. Je n'ai pas eu le temps de formater les informations du fichier protein_fasta_protein_homolog_model.fasta pour en faire un fichier fasta spécial utilisable par prokka, mais je vais le faire rapidement à mon retour. Le but est de remplacer la NCBI Bacterial Antimicrobial Resistance Reference Gene Database par une base de données similaire (core database) avec les données de CARD. Comme nous en avions discuté, la meilleure option serait de préparer une base de données de résistance aux métaux de la même manière.*
+*Auparavant, j'utilisais l'option --protein pour l'annotation des gènes d'antibiorésistance avec CARD. Je n'ai pas eu le temps de formater les informations du fichier protein_fasta_protein_homolog_model.fasta pour en faire un fichier fasta spécial utilisable par prokka, mais je vais le faire rapidement à mon retour. Le but est de remplacer la NCBI Bacterial Antimicrobial Resistance Reference Gene Database par une base de données similaire (core database) avec les données de CARD. Comme nous en avions discuté, la meilleure option serait de préparer une base de données de résistance aux métaux de la même manière que j'ai préparé la db PLASMIDS et dont l'ajout est décrit ici.*
 
 ## Information about the modification #1 of the prokka executable (No action required!)
 
