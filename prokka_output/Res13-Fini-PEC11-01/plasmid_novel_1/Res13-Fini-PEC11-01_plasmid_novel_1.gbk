@@ -1,0 +1,72 @@
+LOCUS       unnamednovel_1_tig2     1565 bp    DNA     circular BCT 24-SEP-2020
+DEFINITION  Escherichia coli strain Res13-Fini-PEC11-01 plasmid unnamednovel_1,
+            complete sequence.
+ACCESSION   
+VERSION
+KEYWORDS    .
+SOURCE      Escherichia coli
+  ORGANISM  Escherichia coli
+            Bacteria; Proteobacteria; gamma subdivision; Enterobacteriaceae;
+            Escherichia.
+REFERENCE   1  (bases 1 to 1565)
+  AUTHORS   Poulin-Laprade,D.
+  TITLE     Comprehensive report of resistance determinants and their genetic
+            context in Escherichia coli from a longitudinal study of pigs
+            reared under various husbandry practices
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1565)
+  AUTHORS   Poulin-Laprade,D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-SEP-2020) Science and Technology Branch, Agriculture
+            and Agri-Food Canada, 2000 College, Sherbrooke, Quebec J1M 0C8,
+            Canada
+COMMENT     Annotated using prokka 1.13.3 from
+            https://github.com/tseemann/prokka.
+FEATURES             Location/Qualifiers
+     source          1..1565
+                     /organism="Escherichia coli"
+                     /mol_type="genomic DNA"
+                     /strain="Res13-Fini-PEC11-01"
+                     /db_xref="taxon:562"
+                     /plasmid="unnamednovel_1"
+     gene            complement(280..864)
+                     /locus_tag="DOCOEMPF_00001"
+     CDS             complement(280..864)
+                     /locus_tag="DOCOEMPF_00001"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /translation="MCKCNTVTRDDIPFAIWSGLRPDTPHQCVRAQCGFRFSSASSPT
+                     RSLTFGRWGCGERCHLSHVVGDSAVVLSGISRQIALQTRSEALRRTKRGLNARQGMEG
+                     AKNAYRAFQEVRRADTPSQGLSGRQEPRQPPAKPICTVQAATRLVGGRRPSVLQRWGS
+                     GVLPRRFPVALKALPEPWRLDRSGDRGAKTRKGF"
+ORIGIN      
+        1 aaaaaacgcg ttagtcagaa ttcctgttgc tggtaaggtt tgtgcgtatg cactcgatcc
+       61 acatgaagtc tggaagggat acaacacatc taaaaactac gcggcgtttg tcactaaaac
+      121 actggtcaac aaagacggtg atattcagcg ccgaatcatg gccatgtttt caaattgagc
+      181 cagcggcagg cacaggcaaa aaccccgttt ttggacaatc tgattcaaat gttaacattt
+      241 gacatcgggt tgtctatcct gcattgctct tttgccgcct caaaatccct tgcgtgtttt
+      301 tgctccccga tctccagaac gatcgagccg ccacggttcc ggcagcgcct tgagcgcaac
+      361 cggaaaccgt ctggggagaa ccccagaccc ccatcgctgt aacaccgacg gtctacgacc
+      421 acctaccaac cgagtggctg cctgtaccgt gcaaatgggc tttgcagggg gctggcgcgg
+      481 ttcctggcga cctgaaagcc cctggctagg ggtatcggcg cgcctgacct cctgaaacgc
+      541 tctgtaagcg tttttcgcgc cttccatgcc ctgacgggca tttaaacccc gtttcgtgcg
+      601 tctgagagct tctgagcgcg tttgaagggc tatctgacga cttatccccg aaagaacaac
+      661 agcggaatca ccgacaacat gcgagaggtg gcaccgctcg ccgcagcccc agcgaccgaa
+      721 cgttagtgag cgagtgggcg aggaagcgga agagaaccgg aaaccacatt gagcacgtac
+      781 gcactgatgc ggggtgtcgg ggcgaagccc tgaccagatg gcaaacggaa tatcgtcgcg
+      841 ggtgacggta ttacatttgc acatcctgtc ccgatttctg aggcgtttta gcggtgaacg
+      901 gacggcaaaa ccatgatgga gctgttgaac gttgagagcg tgaaatctgg caaaaatcac
+      961 agctggtaag gcttgcagag gagtaagcca gtatacactc cgctatcgct acgtgactgg
+     1021 gtcagggctt cgccccgaca ccccaaaaaa gtgttccgct ttgcgcaaca ctttcagcag
+     1081 aaaagatatt taagggcgat tttgtaagtt attgattttt tagctacttg cattatgggt
+     1141 tagctcacgc atgtgtggtc taaggttagc tcacgcatgt gtgagctagg tcgacctatc
+     1201 atggtttacg tttgagctat gatggcttat atttgagcca tcattagacc gtggagattt
+     1261 accatgtata tcgggactga agagcagcga aaaaagcgtc taaaagaact ggaaaaatta
+     1321 aacaaagaat cggaatcaga tccgaaaaat aacggcccat tcacccaggt ttatcagaag
+     1381 ggctgggaaa ggatccgaga actgtcgaag gacaagcagg gagttgtagc aataccgctt
+     1441 tactcgtttt tagctgagca catagatccc tcatgcggtg ctgttgttgc cgatcagcag
+     1501 tttttagcag ataaattggg tgttagccga agcacaatta agcgctggct caactactta
+     1561 gaatc
+//

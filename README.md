@@ -100,7 +100,7 @@ assemblies -> MOB-suite -> PROKKA (with CARD labelling) --> GENcontext
 
 This strategy was used in Poulin-Laprade et al. 2021 to unreveal the genetic context around some ARGs.
 
-I you plan to use GENcontext in a similar scenario, you should organize your genbank files in subfolders to benefit from good metadata labeling in output files.
+I you plan to use [GENcontext](https://github.com/soda460/GENcontext) in a similar scenario, you should organize your genbank files in subfolders to benefit from good metadata labeling in output files.
 
 At first level, create folders with strain_names and at second level, create folders with molecule names in which your genbank files will be located.
 
@@ -127,6 +127,7 @@ tree ./annotation folder/ -P *.gbk
 etc
 ```
 
+### Example commands
 
 ```shell
 prokka --force \
@@ -161,7 +162,7 @@ prokka --force \
 ```
 
 
-## GENcontext commands with these gbk files
+## Corresponding GENcontext commands with these gbk files
 
 
 ```shell

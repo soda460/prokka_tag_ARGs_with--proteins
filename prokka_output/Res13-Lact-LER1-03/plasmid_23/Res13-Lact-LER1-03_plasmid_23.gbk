@@ -1,0 +1,276 @@
+LOCUS       unnamed23_tig15         4148 bp    DNA     linear   BCT 24-SEP-2020
+DEFINITION  Escherichia coli strain Res13-Lact-LER1-03 plasmid unnamed23.
+ACCESSION   
+VERSION
+KEYWORDS    .
+SOURCE      Escherichia coli
+  ORGANISM  Escherichia coli
+            Bacteria; Proteobacteria; gamma subdivision; Enterobacteriaceae;
+            Escherichia.
+REFERENCE   1  (bases 1 to 4148)
+  AUTHORS   Poulin-Laprade,D.
+  TITLE     Comprehensive report of resistance determinants and their genetic
+            context in Escherichia coli from a longitudinal study of pigs
+            reared under various husbandry practices
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 4148)
+  AUTHORS   Poulin-Laprade,D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-SEP-2020) Science and Technology Branch, Agriculture
+            and Agri-Food Canada, 2000 College, Sherbrooke, Quebec J1M 0C8,
+            Canada
+COMMENT     Annotated using prokka 1.13.3 from
+            https://github.com/tseemann/prokka.
+FEATURES             Location/Qualifiers
+     source          1..4148
+                     /organism="Escherichia coli"
+                     /mol_type="genomic DNA"
+                     /strain="Res13-Lact-LER1-03"
+                     /db_xref="taxon:562"
+                     /plasmid="unnamed23"
+     gene            complement(38..457)
+                     /locus_tag="KLDNHCLP_00001"
+     CDS             complement(38..457)
+                     /locus_tag="KLDNHCLP_00001"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /inference="similar to AA sequence:PLASMIDS:ANV05765.1"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="entry exclusion protein 1"
+                     /translation="MAWHTLRDALKMTGRSRSQFYRDMRAGLVSYRTGRDGRREFETS
+                     ELIRAYGELKQNETPERHSEGHAENPHDQQTERILRELNELKQCLTLMLEDKQAQDMD
+                     RRRQEAEREQLQNEIAQLRQALELEKKRGFWSRLFGR"
+     gene            735..2303
+                     /locus_tag="KLDNHCLP_00002"
+     CDS             735..2303
+                     /locus_tag="KLDNHCLP_00002"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /inference="similar to AA sequence:PLASMIDS:ANV05762.1"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="colicin-10"
+                     /translation="METAVAYYKDGVPYDDKGQVIITLLNGTPDGSGSGGGGGKGGSK
+                     SESSAAIHATAKWSTAQLKKTQAEQAARAKAAAEAQAKAKANRDALTQRLKDIVNEAL
+                     RHNASRTPSATELAHANNAAMQAEAERLRLAKAEEKARKEAEAAEKAFQEAEQRRKEI
+                     EREKAETERQLKLAEAEEKRLAALSEEAKAVEIAQKKLSAAQSEVVKMDGEIKTLNSR
+                     LSSSIHARDAEMKTLAGKRNELAQASAKYKELDELVKKLSPRANDPLQNRPFFEATRR
+                     RVGAGKIREEKQKQVTASETRINRINADITQIQKAISQVSNNRNAGIARVHEAEENLK
+                     KAQNNLLNSQIKDAVDATVSFYQTLTEKYGEKYSKMAQELADKSKGKKIGNVNEALAA
+                     FEKYKDVLNKKFSKADRDAIFNALASVKYDDWAKHLDQFAKYLKITGHVSFGYDVVSD
+                     ILKIKDTGDWKPLFLTLEKKAADAGVSYVVALLFSLLAGTTLGIWGIAIVTGILCSYI
+                     DKNKLNTINEVLGI"
+     gene            complement(2300..2641)
+                     /locus_tag="KLDNHCLP_00003"
+     CDS             complement(2300..2641)
+                     /locus_tag="KLDNHCLP_00003"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /inference="similar to AA sequence:PLASMIDS:ANV05763.1"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="colicin transporter"
+                     /translation="MSLRYYIKNILFGLYCTLIYIYLITKNSEGYYFLVSDKMLYAIV
+                     ISTILCPYSKYAIEHIAFNFIKKDFFERRKNLNNAPVAKLNLFMLYNLLCLVLAIPFG
+                     LLGLFISIKNN"
+     gene            complement(3853..4044)
+                     /gene="rom"
+                     /locus_tag="KLDNHCLP_00004"
+     CDS             complement(3853..4044)
+                     /gene="rom"
+                     /locus_tag="KLDNHCLP_00004"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /inference="similar to AA sequence:PLASMIDS:AAL87016.1"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="RNA I inhibition modulator protein Rom"
+                     /translation="MTKQEKTALNMARFIRSQTLTLLEKLNELDADEQADICESLHDH
+                     ADELYRSCLARFGDDGENL"
+ORIGIN      
+        1 atccgaagac tattttatca tcagtctctg acagcgttca gcgaccgaac aacctggacc
+       61 agaatccccg tttcttttcc agttccagtg cctgcctgag ctgggctatc tcattttgta
+      121 gctgttcccg ttctgcttcc tggcgtctgc gatccatatc ctgtgcctgt ttatcctcaa
+      181 gcatcagcgt caggcattgt ttcagctcat tcagctcccg gagaatgcgt tctgtctgct
+      241 gatcatgtgg attttctgca tgtccctcac tgtgcctttc tggtgtctca ttctgcttta
+      301 attcgccgta tgcccggatc agttcactgg tttcaaactc ccgtcgtccg tccctgccgg
+      361 tacggtaact gacaaggcct gcgcgcatat cacggtaaaa ctgtgaacgc gatctgcctg
+      421 tcatttttag tgcgtcccgg agtgtgtgcc atgccataaa gtgacagtgt cccatagatg
+      481 tctcatctca tagtttcagt aaaacataat gaggtctgag aacggtaatg tttgtgctgg
+      541 tttttgtggc atcgggcgag aatagcgcgt ggtgtgaaag actgtttttt tgatcgtttt
+      601 cacaaaaatg gaagtccaca gtcttgacag ggaaaatgca gcggcgtagc ttttatgctg
+      661 tatataaaac cagtggttat atgtacagta tttattttta acttattgtt ttaaaagtca
+      721 aagaggattt tataatggaa accgcggtag cgtactataa agatggtgtt ccttatgatg
+      781 ataagggaca ggtaattatt actcttttga atggtactcc tgacgggagt ggctctggcg
+      841 gcggaggtgg aaaaggaggc agtaaaagtg aaagttctgc agctattcat gcaactgcta
+      901 aatggtctac tgctcaatta aagaaaacac aggcagagca ggctgcccgg gcaaaagctg
+      961 cagcggaagc acaggcgaaa gcaaaggcaa acagggatgc gctgactcag cgcctgaagg
+     1021 atatcgtgaa tgaggctctt cgtcacaatg cctcacgtac gccttcagca acagagcttg
+     1081 ctcatgctaa taatgcagct atgcaggcgg aagcagagcg tttgcgcctt gcgaaagcag
+     1141 aagaaaaagc ccgtaaagaa gcggaagcag cagaaaaggc ttttcaggaa gcagaacaac
+     1201 gacgtaaaga gattgaacgg gagaaggctg aaacagaacg ccagttgaaa ctggctgaag
+     1261 ctgaagagaa acgactggct gcattgagtg aagaagctaa agctgttgag atcgcccaaa
+     1321 aaaaactttc tgctgcacaa tctgaagtgg tgaaaatgga tggagagatt aagactctca
+     1381 attctcgttt aagctccagt atccatgccc gtgatgcaga aatgaaaacg ctcgctggaa
+     1441 aacgaaatga actggctcag gcatccgcta aatataaaga actggatgag ctggtcaaaa
+     1501 aactatcacc aagagccaat gatccgcttc agaaccgtcc tttttttgaa gcaaccagac
+     1561 gacgggttgg ggccggtaag attagagaag aaaaacaaaa acaggtaaca gcatcagaaa
+     1621 cacgtattaa ccggataaat gctgatataa ctcagatcca gaaggctatt tctcaggtca
+     1681 gtaataatcg taatgccggt atcgctcgtg ttcatgaagc tgaagaaaat ttgaaaaaag
+     1741 cacagaataa tctccttaat tcacagatta aggatgctgt tgatgcaaca gttagctttt
+     1801 atcaaacgct gactgaaaaa tatggtgaaa aatattcgaa aatggcacag gaacttgctg
+     1861 ataagtctaa aggtaagaaa atcggcaatg tgaatgaagc tctcgctgct tttgaaaaat
+     1921 acaaggatgt tttaaataag aaattcagca aagccgatcg tgatgctatt tttaatgcgt
+     1981 tggcatcggt gaagtatgat gactgggcta aacatttaga tcagtttgcc aagtacttga
+     2041 agattacggg gcatgtttct tttggatatg atgtggtatc tgatatccta aaaattaagg
+     2101 atacaggtga ctggaagcca ctatttctta cattagagaa gaaagctgca gatgcagggg
+     2161 tgagttatgt tgttgcttta ctttttagct tgcttgctgg aactacatta ggtatttggg
+     2221 gtattgctat tgttacagga attctatgct cctatattga taagaataaa cttaatacta
+     2281 taaatgaggt gttagggatt taattattct ttattgatat aaaaagtcct agcaatccaa
+     2341 atgggattgc taggaccaaa caaagtagat tatatagcat aaataggttt aattttgcta
+     2401 cgggggcgtt atttaggttt tttcttcttt cgaaaaaatc tttctttatg aagttaaaag
+     2461 ctatgtgttc aatagcatat tttgaatatg gacatagaat agtgcttatc actattgcat
+     2521 atagcatctt atctgacaca aggaaataat acccctcgct gttttttgtt ataaggtata
+     2581 tatatataag tgtgcagtac aggccaaata aaatattttt tatgtagtat cttaagctca
+     2641 taaattaaac ctcgccatat attcttttca ttttataagg atcgagttat gaggaaaaga
+     2701 ttttttgtgg gaatattcgc gataaacctc cttgttggat gtcaggctaa ctatatacgt
+     2761 gatgttcagg gagggaccat cgcaccatcc tcctcttcta aactgacggg gatcgcggtt
+     2821 cagtagaaaa gatcaaagga tcttcttgag atcctttttt tctgcgcgta atctgctgct
+     2881 tgcaaacaaa aaaaccaccg ctaccaacgg tggtttgttt gccggatcaa gagctaccaa
+     2941 ctctttttcc gaaggtaact ggcttcagca gagcgcagat accaaatact gtccttctag
+     3001 tgtagccgta gtcgggccac tacttcaaga actctgtagc accgtttgtg ccatcatcgc
+     3061 tctgctaatc cggttaccag tggctgctgc cagtggcgtt aaggcgtgcc ttaccgggtt
+     3121 ggactcaaga cgatagttac cggataaggc gcagcggtcg ggctgaacgg ggggttcgtg
+     3181 cacacagccc agcttggagc gaacgaccta caccgaactg agataccaac agcgtgagct
+     3241 atgagaaagc gccacgcttc ccgaagggag aaaggcggac aggtatccgg taagcggcag
+     3301 ggtcggaaca ggagagcgca cgagggagct tccaggggga aacgcctggt gtctttatag
+     3361 tcctgtcggg tttcgccacc tctgacttga gcgtctattt ttgtgatgct cgtcaggggg
+     3421 gcggagccta tggaaaaacg cctgctacgc ggccttcttc ctgtttctgg tcttttgctc
+     3481 acatgttctt tccggcctta tcccctgatt ctgtggataa ctgtgttacc gtttttgtgt
+     3541 gagtcagtac cgctcgccgc agtcgaacga ccgagcgtag cgagtcagtg agcgaggaag
+     3601 cggaaaagcg cctggacgtg cattttctcc ttacgcatct gtgcggcatt tcacacccgg
+     3661 catggcgtac ttttcataca atccgcactg atgccgcatg gttaagccag tatacactcc
+     3721 gctatcgcta cgtgactggg tcagggctgc gccccgacac ccgctaaaac ctgctgacgc
+     3781 gccctgacgg gcttgtcagc tcccggcatc cgctcacaga caagctgtga ccgtctccgg
+     3841 gagctgcatg tgtcagaggt tttcaccgtc atccccgaaa cgtgcgaggc agctgcggta
+     3901 aagctcatcg gcgtggtcgt gaagcgattc acaaatatcg gcctgttcat ctgcgtccag
+     3961 ttcgttgagc ttctccagca gcgttaatgt ctggcttctg ataaagcggg ccatgttaag
+     4021 ggcggttttt tcctgtttag tcactgatgc ctccgtgtaa gggggatttc tgttcatggg
+     4081 gtaatgatac cgatgaaacg cgagaggatg ctcacaatac gggttactga tgatgaacat
+     4141 gcccggtt
+//
+LOCUS       unnamed23_tig28         2493 bp    DNA     linear   BCT 24-SEP-2020
+DEFINITION  Escherichia coli strain Res13-Lact-LER1-03 plasmid unnamed23.
+ACCESSION   
+VERSION
+KEYWORDS    .
+SOURCE      Escherichia coli
+  ORGANISM  Escherichia coli
+            Bacteria; Proteobacteria; gamma subdivision; Enterobacteriaceae;
+            Escherichia.
+REFERENCE   1  (bases 1 to 2493)
+  AUTHORS   Poulin-Laprade,D.
+  TITLE     Comprehensive report of resistance determinants and their genetic
+            context in Escherichia coli from a longitudinal study of pigs
+            reared under various husbandry practices
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2493)
+  AUTHORS   Poulin-Laprade,D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-SEP-2020) Science and Technology Branch, Agriculture
+            and Agri-Food Canada, 2000 College, Sherbrooke, Quebec J1M 0C8,
+            Canada
+COMMENT     Annotated using prokka 1.13.3 from
+            https://github.com/tseemann/prokka.
+FEATURES             Location/Qualifiers
+     source          1..2493
+                     /organism="Escherichia coli"
+                     /mol_type="genomic DNA"
+                     /strain="Res13-Lact-LER1-03"
+                     /db_xref="taxon:562"
+                     /plasmid="unnamed23"
+     gene            31..276
+                     /locus_tag="KLDNHCLP_00005"
+     CDS             31..276
+                     /locus_tag="KLDNHCLP_00005"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /inference="similar to AA sequence:PLASMIDS:AMU85828.1"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="mobilization protein"
+                     /translation="MRRVCLGEPVARSGKLPTLAPPLLRQLAAIGNNLNQTARKVNSG
+                     QWSSGDRVQVVAALMAIGDELRRLRLAVREQGARDDS"
+     gene            266..1819
+                     /gene="mbeA"
+                     /locus_tag="KLDNHCLP_00006"
+     CDS             266..1819
+                     /gene="mbeA"
+                     /locus_tag="KLDNHCLP_00006"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /inference="similar to AA sequence:PLASMIDS:AAL87017.1"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="MbeA"
+                     /translation="MIVKFHARGKGGGSGPVDYLLGRERNREGATVLQGNPEEVRELI
+                     DATPFAKKYTSGVLSFAEKELPPGGREKVMASFERVLMPGLEKNQYSILWVEHQDKGR
+                     LELNFVIPNMELQTGKRLQPYYDRADRPRIDAWQTLVNHHYGLHDPNAPENRRTLTLP
+                     DNLPETKQALAEGVTRGIDALYHAGEIKGRQDVIQALTEAGLEVVRVTRSSISIADPN
+                     GGKNIRLKGAFYEQSFADGRGVREKAERESRIYRENAEQRVQEARRICKRGCDIKRDE
+                     NQRRYSPVHSLDRGIAGKTPGRGERGDDAAQEGRVKAGREYGHDVTGDSLSPVYREWR
+                     DALVSWREDTGEPGRNQEAGRDIAETEREDMGRGVCAGREQEIPCPSVREISGGDSLS
+                     GERVGTSEGVTQSDRAGNTFAERLRAAATGLYAAAERMGERLRGIAEDVFAYATGQRD
+                     AERAGHAVESAGAALERADRTLEPVIQRELEIREERLIQEREHVLSLERERQPEIQER
+                     TLDGPSLGW"
+     gene            complement(2030..2449)
+                     /locus_tag="KLDNHCLP_00007"
+     CDS             complement(2030..2449)
+                     /locus_tag="KLDNHCLP_00007"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /inference="similar to AA sequence:PLASMIDS:ANV05761.1"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="entry exclusion protein 2"
+                     /translation="MRRTGNKLCLIAMITATVALTACTPKGSVEQHTRHYVYASDDGF
+                     DPNFSTQKADTTRMMVPFFRQFWDMGAKDKATGKSRSDVQQRIQQFHSQEFLNSLRGT
+                     TQFAGTDYRSKDLTPKKSRLLADTISAVYLDGYEGRQ"
+ORIGIN      
+        1 cgctgtgagg gtaaacaact ggcggtatgg atgcggcggg tctgcctggg ggagccggtt
+       61 gcccgttccg gaaaactgcc gacactggca ccgccgttac tgcgtcagct ggccgccatc
+      121 ggaaataacc tgaatcagac agcccgtaag gtgaacagcg ggcagtggtc ttccggtgac
+      181 cgggttcagg tggtggccgc actgatggcc atcggggatg agctgcgccg gctgcgtctg
+      241 gccgtcaggg aacagggggc gcgggatgat agttaaattt catgccaggg gaaaaggtgg
+      301 tggcagtggt ccggttgatt acctgctggg gagggagcgt aaccgcgaag gcgcaacggt
+      361 gcttcagggt aatccggaag aagtccggga actcatcgat gccacgccat ttgcgaagaa
+      421 atacacgtcc ggtgttctgt cgttcgcgga gaaggagctg ccgccgggag gacgtgaaaa
+      481 agtgatggcg agctttgagc gtgtactgat gcccggtctc gaaaaaaatc agtacagcat
+      541 cctgtgggtg gagcaccagg acaagggacg gcttgagctg aattttgtca ttccgaacat
+      601 ggagctacag accggaaaac gcctccagcc gtactacgac cgcgcagaca ggcctagaat
+      661 tgatgcctgg cagacgctgg tgaatcacca ttacgggctg catgacccga acgccccgga
+      721 gaaccgcagg acgctgacac tccctgataa cctgcctgaa acgaaacagg cgcttgctga
+      781 gggcgtcacg cgaggtatag atgcacttta ccatgccgga gagataaaag gccgtcagga
+      841 tgtgattcag gcgctcactg aggcggggct ggaagtggtc agggtgacgc gaagcagtat
+      901 cagcattgca gatccgaacg gcgggaagaa tatcaggctg aaaggagcat tttatgagca
+      961 atcttttgca gacgggcgcg gagttcgaga aaaagctgaa agagagagcc gaatctacag
+     1021 agaaaatgct gaacaacgag ttcaggaggc tcggcgaatc tgtaagcgag gctgtgacat
+     1081 caaacgagac gaaaatcaga gacgctatag ccctgttcac agcctcgaca gaggaatcgc
+     1141 tggaaaaaca ccgggaaggg gtgaaagagg cgatgatgca gcacaggagg gacgtgttaa
+     1201 agctggcagg gaatacgggc atgatgttac tggggatagt ctttctcctg tttaccgcga
+     1261 gtggcgggac gctctggtat cttggaggga ggatacaggc gaacctggaa gaaatcagga
+     1321 agcaggaaga gacattgcag aaactgaacg cgaagacatg gggcgtggag tttgtgcagg
+     1381 acgggaacag gaaattcctt gtccttccgt acgggaaatc agcggaggtg attccctttc
+     1441 aggggaaaga gtgggtacat ctgaaggagt gacacagagt gacagagctg gaaacacatt
+     1501 tgctgaacgc cttagagcag ctgcaacagg actatatgca gcggctgagc gaatgggaga
+     1561 gcgccttcgt ggaattgcag aagatgtttt cgcttacgca acgggacaac gcgatgctga
+     1621 acgagcgggt catgcagttg agtcagcagg tgcagcactt gagcgagcag acagaacgct
+     1681 tgagccagtt atacagcgag aactggagat aagagaggaa cggctgatac aggagcgcga
+     1741 acatgtgtta tccctggaac gggagcgtca gccggaaata caggaacgca cgctggatgg
+     1801 cccttcgctg ggatggtgaa accatgaaaa atggcagctt cagtggatta agtgggggta
+     1861 atgtggcctg taccctctgg ttgcataggt attcatacgg ttaaaattta tcaggcgcga
+     1921 tcgcggcagt ttttcgggtg gtttgttgcc atttttacct gtctgctgcc gtgatcgcgc
+     1981 tgaacgcgtt ttagcggtgc gtacaattaa gggattatgg taaatccact tactgtctgc
+     2041 cctcgtagcc atcgagataa accgcagaaa tcgtgtcagc cagcagcctg gattttttcg
+     2101 gggtaaggtc tttgctgcgg taatcagtac ccgcaaattg agttgtgccc cggagtgagt
+     2161 ttaaaaattc ctggctgtga aactgctgaa tgcgttgttg cacatcactc cgtgattttc
+     2221 ctgtcgcttt atctttagct cccatatccc agaactgccg aaaaaaaggc accatcattc
+     2281 gtgttgtgtc ggctttttgg gtggaaaagt tgggatcaaa accgtcatca gaagcatata
+     2341 cgtaatgccg ggtatgttgt tccacgctgc cctttggggt acaggctgtg agagctactg
+     2401 ttgctgttat catggcgata agacaaagtt tgtttccggt acgtctcatg agtgtctccc
+     2461 taccttaaag tatttattct cggtgagtta tta
+//

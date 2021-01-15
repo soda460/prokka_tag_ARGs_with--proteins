@@ -1,0 +1,83 @@
+LOCUS       unnamednovel_3_tig3     1552 bp    DNA     circular BCT 24-SEP-2020
+DEFINITION  Escherichia coli strain Res13-Sevr-PEB02-10 plasmid unnamednovel_3,
+            complete sequence.
+ACCESSION   
+VERSION
+KEYWORDS    .
+SOURCE      Escherichia coli
+  ORGANISM  Escherichia coli
+            Bacteria; Proteobacteria; gamma subdivision; Enterobacteriaceae;
+            Escherichia.
+REFERENCE   1  (bases 1 to 1552)
+  AUTHORS   Poulin-Laprade,D.
+  TITLE     Comprehensive report of resistance determinants and their genetic
+            context in Escherichia coli from a longitudinal study of pigs
+            reared under various husbandry practices
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1552)
+  AUTHORS   Poulin-Laprade,D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-SEP-2020) Science and Technology Branch, Agriculture
+            and Agri-Food Canada, 2000 College, Sherbrooke, Quebec J1M 0C8,
+            Canada
+COMMENT     Annotated using prokka 1.13.3 from
+            https://github.com/tseemann/prokka.
+FEATURES             Location/Qualifiers
+     source          1..1552
+                     /organism="Escherichia coli"
+                     /mol_type="genomic DNA"
+                     /strain="Res13-Sevr-PEB02-10"
+                     /db_xref="taxon:562"
+                     /plasmid="unnamednovel_3"
+     gene            162..842
+                     /locus_tag="GDLFAJIP_00001"
+     CDS             162..842
+                     /locus_tag="GDLFAJIP_00001"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /translation="MIFARFRGFHVQQLLHVFCRPFTVNPRRNRDRMCKCNTVTRDDI
+                     PFAIWSGLRPDTPYQCVRAQCGFRFSSASSPTRSLTFGRWGCGERCHLSHVVGDSAVV
+                     LSGMSRQIALQTRSEALRRTRRGLNARQGMEGAKNAYRAFQEVRRADTPSQGLSGRQE
+                     PRQPPAKPICTVQAVTRLVGGRRPSVLQRWGSGVLPRRFPVALKALPEPWRLGRSGDR
+                     GAKTRKGF"
+     gene            complement(924..1400)
+                     /locus_tag="GDLFAJIP_00002"
+     CDS             complement(924..1400)
+                     /locus_tag="GDLFAJIP_00002"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /translation="MFIDSEKRLKQLSDEAKKNTEDLEEAKKNSRFTQVSPKGWERVR
+                     ELLKDSQGISALKLYSFLAEHIDPTCGAVVADQQFLAEKLGVSRSTIIRWLNYLESKN
+                     ALVRIPVAGKVCAYALDPHEVWKGYNTTKNHAAFVTKTLVNKDGDIQRRIMAMFSN"
+ORIGIN      
+        1 aaaaaaacaa caacttacaa atcggcgtaa aagatctatt ctaggcaagg gtgttgcgcg
+       61 caacgcaacg ccctttgggg gtgtcggggc gaagccctga cccagtcacg tagcgatagc
+      121 ggagtgtata ctggcttact cctctgcaag cctcgccagc cgtgattttt gccagatttc
+      181 gtggttttca cgttcaacag ctcctgcacg ttttttgccg tccgttcacc gttaaccccc
+      241 gcagaaatcg ggacaggatg tgcaaatgta ataccgtcac ccgcgacgat attccgtttg
+      301 ccatctggtc agggcttcgc cccgacaccc cgtatcagtg cgtacgtgct caatgtggtt
+      361 tccggttctc ttccgcttcc tcgcccactc gctcactaac gttcggtcgc tggggctgcg
+      421 gcgagcggtg ccacctctcg catgttgtcg gtgattccgc tgttgttctt tcggggatga
+      481 gtcgtcagat agcccttcaa acgcgctcag aagctctcag acgcacgagg cggggtttaa
+      541 atgcccgtca gggcatggaa ggcgcgaaaa acgcttacag agcgtttcag gaggtcaggc
+      601 gcgccgatac ccctagccag gggctttcag gtcgccagga accgcgccag ccccctgcaa
+      661 agcccatttg cacggtacag gcagtcactc ggttggtagg tggtcgtaga ccgtcggtgt
+      721 tacagcgatg ggggtctggg gttctcccca gacggtttcc ggttgcgctc aaggcgctgc
+      781 cggaaccgtg gcggctcggt cgttctggag atcggggagc aaaaacacgc aagggatttt
+      841 gaggcggcaa aagagcaatg caggatagac aatcatggtc agaacgttaa cacgtagccc
+      901 ctgattgtcc gcctgccgct ggctcaattt gaaaacatgg ccatgattcg gcgctgaata
+      961 tcaccgtctt tgttgaccag tgttttagtg acaaatgctg catggttttt cgtagtgttg
+     1021 tatcccttcc agacttcatg tggatcgagg gcatacgcac aaaccttacc agcaacgggg
+     1081 attctaacta atgcattttt tgattctaag taattgagcc aacgaataat tgtgcttctg
+     1141 ctaactccaa gtttttcagc taggaattgc tgatccgcaa cgacagcgcc acacgtagga
+     1201 tcgatatgct ccgctaaaaa tgagtacagc ttcagtgctg atatgccttg gctatccttc
+     1261 agcagctctc gaacgcgttc ccaacctttt ggggatacct gtgtaaacct tgaattcttc
+     1321 tttgcttctt cgagatcctc ggtgtttttc tttgcctcat ctgaaagttg tttcagtcgt
+     1381 ttttctgaat caataaacat gattttttcc ctctaaaaat cccatgcact aacgttggtt
+     1441 caaatctaag ccatcatgac acatctgtgc aacaccttgt tgcgtgttgt cgcatccagg
+     1501 atgcgacaac gttgtgtcac cctggatgcg acaggtaaac aaaaaacaca ct
+//
