@@ -56,7 +56,7 @@ The procedure described here lead to the production of regular genbank files whe
                      ALTARQQTYEA"
 ```
 
-This specfic label is searched by [GENcontext](URL) to targer ARGs.
+This specfic label is searched by [GENcontext](https://github.com/soda460/GENcontext) to targer ARGs.
 
 Note that PROKKA also annotate IS elements by adding a reference to the ISfinder database, which is one of the three core databases included in PROKKA.
 
@@ -81,22 +81,23 @@ Once the installation is completed, you can check the programm version and the s
 prokka
 ```
 
-## Get the CARD database
+## Get the CARD database and more specifically, the protein_fasta_protein_homolog_model.fasta file
 
 ```shell
-    wget https://card.mcmaster.ca/download/0/broadstreet-v3.1.0.tar.bz2
-    tar -xvpf broadstreet-v3.1.0.tar.bz2
+wget https://card.mcmaster.ca/download/0/broadstreet-v3.1.0.tar.bz2
+tar -xvpf broadstreet-v3.1.0.tar.bz2
 ```
 
-More specifically, get the protein_fasta_protein_homolog_model.fasta file. The key point is to annotate you assemblies files with PROKKA using the --proteins option.
+The key is to annotate you assemblies files with PROKKA using the --proteins option.
 
 
 
 ## Run PROKKA with fasta files from [MOBsuite](https://github.com/phac-nml/mob-suite) output as input files.
 
-This could be useful when you have sequencing data from many strains.
+This approach could be very useful when you have sequencing data from many strains.
 
-assemblies -> MOB-suite -> PROKKA (with CARD labelling) --> GENcontext
+**assemblies -> MOB-suite -> PROKKA (with CARD labelling) --> GENcontext
+**
 
 This strategy was used in Poulin-Laprade et al. 2021 to unreveal the genetic context around some ARGs.
 
@@ -129,27 +130,26 @@ etc
 
 ### Example commands
 
+These commands should work with the input files included in this repository (see prokka_input/)
+
+
 ```shell
 prokka --force \
-       --outdir prokka_output/R13-AF11-pFin-05 \
+       --prefix Res13-Lact-PER13-34_plasmid_476 \
+       --genus Escherichia \
+       --species coli \
+       --strain Res13-Lact-PER13-34 \
+       --outdir prokka_output/Res13-Lact-PER13-34/plasmid_476 \
        --proteins protein_fasta_protein_homolog_model.fasta \
        --evalue 1e-9 \
        --addgenes \
-       mob_suite_output/R13-AF11-pFin-05/plasmid_476.fasta
-
-
-prokka --force \
-       --outdir prokka_output/Res13-Sevr-PER06-05-b-A \
-       --proteins protein_fasta_protein_homolog_model.fasta \
-       --evalue 1e-9 \
-       --addgenes \
-       prokka_input/mob_suite_output/Res13-Sevr-PER06-05-b-A/plasmid_476.fasta
-Res13-Sevr-PER06-05-b-A
-
-
+       prokka_input/mob_suite_output/Res13-Lact-PER13-34/plasmid_476.fasta
 ```
 
-## Run PROKKA with fasta file obtainded from Genbank
+
+
+
+## Run PROKKA on fasta file from curated sequences (e.g. from Genbank)
 
 ```shell
 prokka --force \
@@ -162,15 +162,13 @@ prokka --force \
 ```
 
 
-## Corresponding GENcontext commands with these gbk files
+## GENcontext commands that should work with these gbk files
 
 
 ```shell
-./expl_gen_context.py -t 'sul3' -c 'card' -p /home/brouardjs/data/local_gccode_projects/dpl/genome_annotation/prokka_annotation_with_arg_labelling/prokka_output/MK070495.1 -n 5
+./expl_gen_context.py -i mob-suite -t 'CTX' -c 'card' -p prokka_output -n 6
 
-/expl_gen_context.py -t 'CTX-M-1' -c 'card' -p /home/brouardjs/data/local_gccode_projects/dpl/genome_annotation/prokka_annotation_with_arg_labelling/prokka_output/Res13-Lact-PEA12-26 -n 6
-
-./expl_gen_context.py -t 'sul3' -c 'card' -p ../../genome_annotation/prokka_annotation_with_arg_labelling/prokka_output/MK070495.1 -n 6
+./expl_gen_context.py -i plain -t 'sul3' -c 'card' -p prokka_output -n 6
 ```
 
 
@@ -179,6 +177,21 @@ prokka --force \
 Prokka sometimes complain when fasta header are too long.
 
 You could use the --compliant option or, even better, rename the fasta header before lauching PROKKA.
+
+
+## Remote and branchs of this repository
+
+Currently, there is two branchs and two remotes for this project.
+
+The **tag_with--proteins branch** describe the procedure that was followed in Poulin-Laprade et al. 2021 and lie here :
+
+github	https://github.com/soda460/prokka_tag_ARGs_with--proteins.git (fetch) 
+github	https://github.com/soda460/prokka_tag_ARGs_with--proteins.git (push) 
+
+The **master** branch describe an alternative procedure and lie here :
+
+origin	https://gccode.ssc-spc.gc.ca/ac_/dpl/genome_annotation/prokka_annotation_with_arg_labelling.git (fetch)  
+origin	https://gccode.ssc-spc.gc.ca/ac_/dpl/genome_annotation/prokka_annotation_with_arg_labelling.git (push)  
 
 
 ## Contributors
