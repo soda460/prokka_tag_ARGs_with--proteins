@@ -56,7 +56,7 @@ The procedure described here lead to the production of regular genbank files whe
                      ALTARQQTYEA"
 ```
 
-This specfic label is searched by [GENcontext](https://github.com/soda460/GENcontext) to targer ARGs.
+This specfic label is searched by [GENcontext](https://github.com/soda460/GENcontext) to target ARGs.
 
 Note that PROKKA also annotate IS elements by adding a reference to the ISfinder database, which is one of the three core databases included in PROKKA.
 
@@ -81,14 +81,14 @@ Once the installation is completed, you can check the programm version and the s
 prokka
 ```
 
-## Get the CARD database and more specifically, the protein_fasta_protein_homolog_model.fasta file
+## Get the CARD database and more specifically
 
 ```shell
 wget https://card.mcmaster.ca/download/0/broadstreet-v3.1.0.tar.bz2
 tar -xvpf broadstreet-v3.1.0.tar.bz2
 ```
 
-The key is to annotate you assemblies files with PROKKA using the --proteins option.
+More specifically, keep the protein_fasta_protein_homolog_model.fasta file.
 
 
 
@@ -96,8 +96,7 @@ The key is to annotate you assemblies files with PROKKA using the --proteins opt
 
 This approach could be very useful when you have sequencing data from many strains.
 
-**assemblies -> MOB-suite -> PROKKA (with CARD labelling) --> GENcontext
-**
+**assemblies -> MOB-suite -> PROKKA (with CARD labelling) --> GENcontext**
 
 This strategy was used in Poulin-Laprade et al. 2021 to unreveal the genetic context around some ARGs.
 
@@ -185,10 +184,10 @@ Currently, there is two branchs and two remotes for this project.
 
 The **tag_with--proteins branch** describe the procedure that was followed in Poulin-Laprade et al. 2021 and lie here :
 
-github	https://github.com/soda460/prokka_tag_ARGs_with--proteins.git (fetch) 
-github	https://github.com/soda460/prokka_tag_ARGs_with--proteins.git (push) 
+github	https://github.com/soda460/prokka_tag_ARGs_with--proteins.git (fetch)  
+github	https://github.com/soda460/prokka_tag_ARGs_with--proteins.git (push)  
 
-The **master** branch describe an alternative procedure and lie here :
+The **master branch** describe an alternative procedure and lie here :
 
 origin	https://gccode.ssc-spc.gc.ca/ac_/dpl/genome_annotation/prokka_annotation_with_arg_labelling.git (fetch)  
 origin	https://gccode.ssc-spc.gc.ca/ac_/dpl/genome_annotation/prokka_annotation_with_arg_labelling.git (push)  
